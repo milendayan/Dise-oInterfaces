@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUPLAN WEB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/1m.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #d8b4fe, #fbcfe8);
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        h1 {
+            color: #5b4b8a;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            width: 250px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .card img {
+            width: 50px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Índice</h1>
+    <p>Organiza tus trabajos por nivel de prioridad</p>
+    <div class="container">
+        <div class="card">
+            <a href="indice.html">
+                <img src="img/1.jpg" alt="Índice">
+                <p>Índice</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="metodos.html">
+                <img src="img/2.jpg" alt="Métodos de estudio">
+                <p>Métodos de estudio</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="personalizacion.html">
+                <img src="img/3.jpg" alt="Personalización">
+                <p>Personalización</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="gestion.html">
+                <img src="img/4.jpg" alt="Gestión de tareas y trabajos">
+                <p>Gestión de tareas y trabajos</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="recursos.html">
+                <img src="img/5.jpg" alt="Integración de recursos">
+                <p>Integración de recursos</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="contacto.html">
+                <img src="img/6.jpg" alt="Contacto">
+                <p>Contacto</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+

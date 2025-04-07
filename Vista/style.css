@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3eaff;
+    text-align: center;
+    margin: 50px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #7161A8;
+    font-size: 3em;
+}
+
+.highlight {
+    color: #78C2AD;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Modificación para que los inputs estén uno debajo del otro */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* Espacio entre los elementos */
+    text-align: left;
+    width: 100%;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    width: 80%;
+}
+
+.login-form input {
+    width: 80%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-buttons {
+    margin-top: 20px;
+}
+
+.login-buttons p {
+    margin: 10px 0;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Estudio</title>
+    <link rel="icon" type="image/png" href="img/1m.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #e6e6fa, #ffccff);
+            margin: 0;
+            padding: 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: black; /* Color de fondo negro */
+            color: white; /* Color del texto blanco */
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none; /* Quitar subrayado */
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #333; /* Cambio de color cuando se pasa el cursor sobre el botón */
+        }
+        .container {
+            margin-top: 50px;  
+        }
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+        .method {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+        .image img {
+            max-width: 20%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            background: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+        }
+        .method:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón en la parte superior de la página -->
+    <a href="inicio.html" class="btn">Regresar</a>
+    
+    <div class="container">
+        <h1>MÉTODOS DE ESTUDIO</h1>
+        <p>Escoge el que más funcione para tus estudios</p>
+        <div class="method">Técnica Pomodoro
+            <div class="tooltip">Se basa en trabajar por intervalos de tiempo, generalmente de 25 minutos, seguidos de un descanso.</div>
+        </div>
+        <div class="method">Método de Cornell
+            <div class="tooltip">Técnica para tomar apuntes dividiendo la hoja en secciones para resumir y repasar la información.</div>
+        </div>
+        <div class="method">Mapas Mentales
+            <div class="tooltip">Diagrama visual que ayuda a organizar y conectar ideas para mejorar la comprensión.</div>
+        </div>
+        <div class="method">Mnemotecnia
+            <div class="tooltip">Uso de asociaciones mentales para recordar información de forma más sencilla.</div>
+        </div>
+        <div class="method">Fichas de estudio
+            <div class="tooltip">Tarjetas con información clave para repasar conceptos y facilitar el aprendizaje.</div>
+        </div>
+        <div class="image">
+            <img src="img/16.jpg" alt="Imagen educativa">
+        </div>  
+        <p></p>
+    </div>
+    <div class="input-container">
+        <input type="text" id="method-name" placeholder="Nombre del método">
+        <input type="text" id="method-description" placeholder="Descripción del método">
+        <button onclick="addMethod()">Agregar Método</button>
+    </div>
+    <script>
+        function addMethod() {
+            const name = document.getElementById("method-name").value;
+            const description = document.getElementById("method-description").value;
+            if (name && description) {
+                const methodDiv = document.createElement("div");
+                methodDiv.classList.add("method");
+                methodDiv.innerHTML = `${name}<div class='tooltip'>${description}</div>`;
+                document.querySelector(".container").appendChild(methodDiv);
+                document.getElementById("method-name").value = "";
+                document.getElementById("method-description").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
