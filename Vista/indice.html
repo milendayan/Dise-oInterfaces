@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             margin: 0;
             padding: 0;
         }
+        
         .container {
             display: flex;
             align-items: center;
@@ -19,6 +21,7 @@
             height: 100vh;
             padding: 20px;
         }
+        
         .content {
             background: white;
             padding: 20px;
@@ -27,63 +30,81 @@
             display: flex;
             max-width: 900px;
         }
+        
         .text {
             flex: 1;
             padding-right: 20px;
         }
+        
         .text h1 {
             color: #615b85;
         }
+        
         .text p {
             font-size: 16px;
             line-height: 1.5;
             color: #333;
         }
+        
         .image {
             flex: 1;
             text-align: center;
         }
+        
         .image img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
         }
+        
         .btn {
-            display: inline-block;
-            background-color: black; /* Color de fondo negro */
-            color: white; /* Color del texto blanco */
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none; /* Quitar subrayado */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d8b4fe;
+            padding: 10px;
             border-radius: 5px;
-            margin-top: 20px;
-            font-size: 16px;
-            transition: background-color 0.3s;
             position: absolute;
             top: 20px;
             left: 20px;
+            transition: background-color 0.3s;
+            text-decoration: none;
         }
+        
         .btn:hover {
-            background-color: #333; /* Cambio de color cuando se pasa el cursor sobre el botón */
+            background-color: #d8b4fe;
+        }
+        
+        .btn img {
+            width: 24px;
+            height: 24px;
+            display: block;
         }
     </style>
 </head>
+
 <body>
-    <!-- Botón en la parte superior de la página -->
-    <a href="inicio.html" class="btn">Regresar</a>
-    
+    <!-- Botón con imagen -->
+    <a href="inicio.html" class="btn">
+        <img src="img/icon.jpg" alt="Regresar">
+    </a>
+
     <div class="container">
         <div class="content">
             <div class="text">
-                <h1>SOBRE EDUPLAN</h1>
-                <h1>¡Termina tus trabajos a tiempo!</h1>
-                <p>Nuestra plataforma web está diseñada para estudiantes de colegio y universidad, permitiéndoles organizar tareas, exámenes y otras actividades académicas de manera eficiente. Ofrece un registro detallado de fechas importantes y envía notificaciones anticipadas sobre plazos relevantes. Además, incluye actividades interactivas y personalizadas que facilitan el estudio.</p>
+                <h1>Sobre Nosotros</h1>
+                <p>
+                    Somos una empresa comprometida con ofrecer soluciones innovadoras que mejoren la vida de nuestros clientes. Nuestro equipo está formado por profesionales apasionados por la tecnología y el servicio al cliente.
+                </p>
+                <p>
+                    Desde nuestros inicios, nos hemos enfocado en brindar productos y servicios de alta calidad, siempre adaptándonos a las necesidades del mercado y de nuestros usuarios.
+                </p>
             </div>
             <div class="image">
-                <img src="img/12.jpg" alt="Imagen educativa">
-            </div>  
+                <img src="img/12.jpg" alt="Nuestro equipo">
+            </div>
         </div>
     </div>
 </body>
-</html>
 
+</html>

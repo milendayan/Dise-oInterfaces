@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,30 +14,39 @@
             margin: 0;
             padding: 0;
         }
+        
         .btn {
-            display: inline-block;
-            background-color: black; /* Color de fondo negro */
-            color: white; /* Color del texto blanco */
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none; /* Quitar subrayado */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d8b4fe;
+            padding: 10px;
             border-radius: 5px;
-            margin-top: 20px;
-            font-size: 16px;
             position: absolute;
             top: 20px;
             left: 20px;
             transition: background-color 0.3s;
+            text-decoration: none;
         }
+        
         .btn:hover {
-            background-color: #333; /* Cambio de color cuando se pasa el cursor sobre el botón */
+            background-color: #d8b4fe;
         }
+        
+        .btn img {
+            width: 24px;
+            height: 24px;
+            display: block;
+        }
+        
         .container {
-            margin-top: 50px;  
+            margin-top: 50px;
         }
+        
         h1 {
             font-family: "Times New Roman", Times, serif;
         }
+        
         .method {
             display: inline-block;
             margin: 20px;
@@ -46,15 +56,18 @@
             cursor: pointer;
             position: relative;
         }
+        
         .image {
             flex: 1;
             text-align: center;
         }
+        
         .image img {
             max-width: 20%;
             height: auto;
             border-radius: 10px;
         }
+        
         .tooltip {
             display: none;
             position: absolute;
@@ -67,15 +80,18 @@
             transform: translateX(-50%);
             width: 200px;
         }
+        
         .method:hover .tooltip {
             display: block;
         }
     </style>
 </head>
+
 <body>
-    <!-- Botón en la parte superior de la página -->
-    <a href="inicio.html" class="btn">Regresar</a>
-    
+    <a href="inicio.html" class="btn">
+        <img src="img/icon.jpg" alt="Regresar">
+    </a>
+
     <div class="container">
         <h1>MÉTODOS DE ESTUDIO</h1>
         <p>Escoge el que más funcione para tus estudios</p>
@@ -96,7 +112,7 @@
         </div>
         <div class="image">
             <img src="img/16.jpg" alt="Imagen educativa">
-        </div>  
+        </div>
         <p></p>
     </div>
     <div class="input-container">
@@ -119,4 +135,5 @@
         }
     </script>
 </body>
+
 </html>

@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalización</title>
     <link rel="icon" type="image/png" href="img/1m.png">
     <style>
-        /* Estilo del botón */
         .btn {
-            display: inline-block;
-            background-color: black; /* Fondo negro */
-            color: white; /* Texto blanco */
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none; /* Elimina subrayado */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d8b4fe;
+            padding: 10px;
             border-radius: 5px;
-            margin-top: 20px;
-            font-size: 16px;
             position: absolute;
             top: 20px;
             left: 20px;
             transition: background-color 0.3s;
+            text-decoration: none;
         }
-
+        
         .btn:hover {
-            background-color: #333; /* Color de fondo cuando se pasa el cursor */
+            background-color: #d8b4fe;
+        }
+        
+        .btn img {
+            width: 24px;
+            height: 24px;
+            display: block;
         }
     </style>
 </head>
-<body>
 
-    <!-- Botón en la parte superior -->
-    <a href="inicio.html" class="btn">Regresar</a>
+<body>
+    <a href="inicio.html" class="btn">
+        <img src="img/icon.jpg" alt="Regresar">
+    </a>
 
     <!-- Aquí puedes añadir tu contenido -->
-    
+
 </body>
+
 </html>

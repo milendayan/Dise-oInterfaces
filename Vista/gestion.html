@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,24 +13,31 @@
             margin: 0;
             padding: 0;
         }
+        
         .btn {
-            display: inline-block;
-            background-color: black; /* Color de fondo negro */
-            color: white; /* Color del texto blanco */
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none; /* Quitar subrayado */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #d8b4fe;
+            padding: 10px;
             border-radius: 5px;
-            margin-top: 20px;
-            font-size: 16px;
             position: absolute;
             top: 20px;
             left: 20px;
             transition: background-color 0.3s;
+            text-decoration: none;
         }
+        
         .btn:hover {
-            background-color: #333; /* Cambio de color cuando se pasa el cursor sobre el botón */
+            background-color: #d8b4fe;
         }
+        
+        .btn img {
+            width: 24px;
+            height: 24px;
+            display: block;
+        }
+        
         .container {
             display: flex;
             align-items: center;
@@ -37,6 +45,7 @@
             height: 100vh;
             padding: 20px;
         }
+        
         .content {
             background: white;
             padding: 20px;
@@ -46,11 +55,13 @@
             max-width: 900px;
             flex-direction: row;
         }
+        
         .task-list {
             display: flex;
             flex-direction: column;
             margin-right: 20px;
         }
+        
         .task-list input {
             background: black;
             color: white;
@@ -60,27 +71,34 @@
             text-align: center;
             width: 150px;
         }
+        
         .image {
             flex: 1;
             text-align: center;
         }
+        
         .image img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
         }
+        
         .text h1 {
             color: #615b85;
         }
+        
         .text p {
             font-size: 16px;
             line-height: 1.5;
             color: #333;
         }
+        
         .priority {
-            text-align: center; /* Centra la imagen y el texto dentro del contenedor */
+            text-align: center;
+            /* Centra la imagen y el texto dentro del contenedor */
             margin-top: 20px;
         }
+        
         .priority h1 {
             color: red;
             font-weight: bold;
@@ -90,9 +108,11 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- Botón en la parte superior -->
-    <a href="inicio.html" class="btn">Regresar</a>
+    <a href="inicio.html" class="btn">
+        <img src="img/icon.jpg" alt="Regresar">
+    </a>
 
     <div class="container">
         <div class="content">
@@ -114,4 +134,5 @@
         </div>
     </div>
 </body>
+
 </html>
